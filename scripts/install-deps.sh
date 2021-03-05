@@ -243,7 +243,7 @@ do_install_do() {
     if [[ $install_do_deps != "false" ]]; then
         local bootstrap_file=$do_dir/build/bootstrap/bootstrap-$install_do_deps.sh
         chmod +x $bootstrap_file || return
-        $SUDO $bootstrap_file || return
+        $SUDO $bootstrap_file --no-tools || return
     fi
 
     mkdir cmake || return
