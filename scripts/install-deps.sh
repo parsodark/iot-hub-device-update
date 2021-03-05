@@ -45,7 +45,7 @@ catch2_ref=$default_catch2_ref
 
 # DO Deps
 install_do=false
-default_do_ref=0.6.1
+default_do_ref=main
 do_ref=$default_do_ref
 install_do_deps=false
 default_do_deps_distro=ubuntu1804
